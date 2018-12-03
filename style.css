@@ -28,3 +28,13 @@ body, html {
 img {
     width: 300px;
 }
+
+.marker {
+    background-image: url('camera_icon1.png');
+    background-size: cover;
+    /*background-color: red;*/
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}

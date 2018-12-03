@@ -8,7 +8,8 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiaXdvdWxkcmF0aGVybm90IiwiYSI6ImNqbmZpdDhscjA0d
 
 let map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v10',
+    style: 'mapbox://styles/iwouldrathernot/cjp8lbr1l3ho42stgpm3teyml',
+    // style: 'mapbox://styles/brianhouse/cjn0u552b52kr2spdz6yhpqj4',
     center: [-73.96024, 40.80877],
     zoom: 16
 })
@@ -577,7 +578,7 @@ let data = [
 	},
 	{
     	//108				
-    	location: [-73.962186],
+    	location: [-73.962186,40.807165],
     	content: '40.807165	central E quad'
 	},
 	{
@@ -676,7 +677,12 @@ let data = [
 
     data.forEach(function(d) {
 
-    let marker = new mapboxgl.Marker()    
+    let element = document.createElement('div');
+    element.className = 'marker' 
+
+//class name means we can create a visual style to be defined; define it in style.css
+
+    let marker = new mapboxgl.Marker(element)    
     marker.setLngLat(d.location)
     marker.addTo(map)  
 
