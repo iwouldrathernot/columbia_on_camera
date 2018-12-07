@@ -45,19 +45,19 @@ map.on('click', function(event) {
 let data = [
     {
     	// 1 - 10 - 1 - 150 E
-        location: [-73.95932,40.809395],
+        location: [-73.95947,40.80928],
         content: 'corner of 120 & Amsterdam, N<br /><img src="001A.jpg" /><br /><img src="001B.jpg" />',
         bearing: 150
     
     },
     {   //2 10  1   330 NW
         location: [-73.959511,40.809302],
-        content: 'corner of 120 & Amsterdam (E)',
+        content: 'corner of 120 & Amsterdam (E)<br /><img src="002A.jpg" /><br /><img src="002B.jpg" />',
         bearing: 330
     },
     {   // 3   25  2   18 N
         location: [-73.959447,40.809237],
-        content: 'corner of 120 & Amsterdam (high)',
+        content: 'corner of 120 & Amsterdam (high)<br /><img src="003A.jpg" /><br /><img src="003B.jpg" />',
         bearing: 18
     },
 	{
